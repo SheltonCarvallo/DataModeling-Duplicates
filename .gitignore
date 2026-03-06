@@ -2,3 +2,4 @@
 data/
 LinkageTutorial/
 *.md
+__pycache__/
