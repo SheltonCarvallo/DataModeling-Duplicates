@@ -1,5 +1,25 @@
-.vscode/
 data/
 LinkageTutorial/
 *.md
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Python
 __pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Environment variables and secrets
+.env
+
+# IDE and OS files
+.DS_Store
+.vscode/
