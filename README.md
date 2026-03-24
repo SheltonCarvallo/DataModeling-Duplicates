@@ -57,7 +57,7 @@ De los 20 754 clientes registrados, 5 938 aparecían tanto en la base de datos d
 ## Estructura del Repositorio
 
 ```
-DataModeling/
+DataModeling-Duplicates/
 ├── data_modeling.ipynb      # Notebook principal de análisis
 ├── helper_functions.py      # Funciones utilitarias compartidas
 └── LinkageTutorial/
