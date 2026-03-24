@@ -1,6 +1,4 @@
 data/
-LinkageTutorial/
-*.md
 
 # Jupyter Notebook
 .ipynb_checkpoints

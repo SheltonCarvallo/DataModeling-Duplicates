@@ -41,4 +41,19 @@ def show_pairs_dfs(df1, df2, multi_index, random_samples=False, number_of_sample
 
 def show_dfs_lengths(dict_of_dfs):
     for k, v in dict_of_dfs.items():
-        print(f'Number of pairs in {k}: {len(v)}')
+        print(f'Número de emparejamientos {k}: {len(v)}')
+
+""" This function returns boolean masks
+for each column introduce in the list_columns parameter
+each boolean mask is stored in a dictionary with its respective key
+"""
+def get_boolean_masks(dataframe1, dataframe2, multiIndex, list_columns):
+    try:
+        df1 = dataframe1.loc[multiIndex.get_level_values(0), list_columns]
+        df2 = dataframe2.loc[multiIndex.get_level_values(1), list_columns]
+        dict_mask_booleans = {}
+        for column in list_columns:
+            dict_mask_booleans[column] = df1[column].values == df2[column].values
+        return dict_mask_booleans
+    except Exception as e:
+        print(f"An unexpected error ocurred: {e}")        
